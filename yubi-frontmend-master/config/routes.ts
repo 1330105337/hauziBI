@@ -1,0 +1,25 @@
+﻿export default [
+  { path: '/user', layout: false, routes: [{ path: '/user/login', component: './User/Login' }] },
+  { path: '/user', layout: false, routes: [{ path: '/user/register', component: './User/Register' }] },
+  { path: '/', redirect: '/add_chart' },
+  { path: '/add_chart', name: '智能分析', icon: 'barChart', component: './AddChart' },
+  { path: '/add_chart_async', name: '智能分析(异步)', icon: 'barChart', component: './AddChartAsync' },
+  { path: '/add_chart_mq', name: '智能分析(MQ实现)', icon: 'barChart', component: './AddChartMQ' },
+  { path: '/my_chart', name: '我的图表', icon: 'pieChart', component: './MyChart' },
+  { path: '/my_post', name: '我的问题', icon: 'AndroidOutlined', component: './MyPost' },
+  { path: '/my_user', name: '用户管理', icon: 'barChart', component: './MyUser' },
+  { path: '/add_post', name: '智能问答', icon: 'AndroidOutlined', component: './AddPost' },
+  { path: '/search_all', name: '全局搜索', icon: 'AndroidOutlined', component: './AddSearch' },
+  { path: '/add_post_async', name: '智能问答(异步)', icon: 'AndroidOutlined', component: './AddPostAsync' },
+  {
+    path: '/admin',
+    icon: 'crown',
+    access: 'canAdmin',
+    routes: [
+      {path: '/admin/user-manage', name: '用户管理', icon: 'smile', component: './Admin/UserManage'},
+      { path: '/admin', name: '', redirect: '/admin/sub-page' },
+      { path: '/admin/sub-page', name: '', component: './Admin' },
+    ],
+  },
+  { path: '*', layout: false, component: './404' },
+];
