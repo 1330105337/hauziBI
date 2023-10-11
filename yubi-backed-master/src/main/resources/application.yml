@@ -18,34 +18,34 @@ spring:
   # todo 需替换配置
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-#    url: jdbc:mysql://localhost:3306/yubi
+#    url: 
     url: jdbc:mysql://localhost:3306/bi
 #    username: root
-    username: huaziBI
-    password: hqh123456
+    username: 
+    password: 
   # Redis 配置
   # todo 需替换配置，然后取消注释
   redis:
     database: 1
-    host: 8.130.131.26
+    host: 
 #    host: localhost
     port: 6379
     timeout: 5000
 
-    password: 123456
+    password: 
   # Elasticsearch 配置
   # todo 需替换配置，然后取消注释
 #  elasticsearch:
 #    uris: http://localhost:9200
 #    username: root
-#    password: 123456
+#    password: 
   # 文件上传
   servlet:
     multipart:
       # 大小限制
       max-file-size: 10MB
   rabbitmq:
-    host: 8.130.131.26
+    host: 
 #    host: localhost
     port: 5672
     password: guest
@@ -99,5 +99,5 @@ cos:
     bucket: xxx
 yuapi:
   client:
-    access-key: 59wslqqm6l0rtq15n3lpwvydgkxcf7da
-    secret-key: aqoz0s1x0pvq70pd2vkvb561b7cgewmf
+    access-key: 
+    secret-key: 
